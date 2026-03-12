@@ -42,6 +42,8 @@
             target.TabIndex = 0;
             target.Text = "나를 잡아봐";
             target.UseVisualStyleBackColor = false;
+            target.Click += target_Click;
+            target.MouseClick += target_MouseClick;
             target.MouseEnter += target_MouseEnter;
             // 
             // Form1
