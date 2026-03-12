@@ -46,11 +46,23 @@
             target.MouseClick += target_MouseClick;
             target.MouseEnter += target_MouseEnter;
             // 
+            // restartButton
+            // 
+            restartButton = new Button();
+            restartButton.Name = "restartButton";
+            restartButton.Text = "다시 시작하기";
+            restartButton.Size = new Size(150, 40);
+            restartButton.Location = new Point(12, 12);
+            restartButton.Visible = false;
+            restartButton.Enabled = false;
+            restartButton.Click += restartButton_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(restartButton);
             Controls.Add(target);
             Name = "Form1";
             Text = "Form1";
@@ -60,5 +72,6 @@
         #endregion
 
         private Button target;
+        private Button restartButton;
     }
 }
